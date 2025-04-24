@@ -61,7 +61,7 @@ const CertificatesSection = () => {
       organization: "National Service Scheme",
       date: "Since September 2023",
       description: "Spearheaded social initiatives like blood donation, plantation drives, and women's rights campaigns.",
-      image: "/certificates/amazon.jpg"
+      image: "/certificates/nss.jpg"
     },
     {
       title: "Infineon Hackathon Finalist",

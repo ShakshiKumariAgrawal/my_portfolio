@@ -26,7 +26,7 @@ const ProjectsSection = () => {
       description: "Designed and implemented a robust movie recommender system leveraging advanced machine learning algorithms. Created an intuitive interface for effortless navigation, enhancing user satisfaction and boosting engagement.",
       technologies: ["Seaborn", "Scikit-learn", "Firebase", "JSON", "Matplotlib", "NumPy", "RESTful APIs"],
       image: "bg-[url('/bob.jpg')] bg-cover bg-center",
-      githubUrl: "#",
+      githubUrl: "https://github.com/ShakshiKumariAgrawal/Movie-Recommendation-System",
       liveUrl: "#",
       category: "data",
       date: "Feb 2025"
@@ -37,7 +37,7 @@ const ProjectsSection = () => {
       description: "Conducted detailed analysis of Airbnb listings data. Enhanced data accuracy by implementing advanced transformation techniques and identified key trends in pricing, reviews, and room types through statistical methods and visualizations.",
       technologies: ["R Programming", "Data Analysis", "Statistical Methods", "Data Visualization"],
       image: "bg-[url('/dashboard.jpg')] bg-cover bg-center",
-      githubUrl: "https://github.com/AnupriyaSingh04/airbnb-analysis",
+      githubUrl: "https://github.com/ShakshiKumariAgrawal/AIRBNB-R-project",
       liveUrl: "#",
       category: "data",
       date: "Jun 2024 - Jul 2024"
