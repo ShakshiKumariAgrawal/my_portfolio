@@ -23,8 +23,40 @@ const ExperienceSection = () => {
       <div className="container mx-auto px-4">
         <SectionHeader title="Education & Training" subtitle="My academic journey and professional development" />
 
-        {/* Education */}
+        {/* Training */}
         <div className="mb-16">
+          <motion.h3
+            initial={{ opacity: 0, y: 10 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            className="text-2xl font-medium text-cosmic-blue mb-8 flex items-center"
+          >
+            <BookOpen className="mr-2" /> Training
+          </motion.h3>
+
+          <motion.div
+            variants={container}
+            initial="hidden"
+            whileInView="show"
+            viewport={{ once: true, amount: 0.2 }}
+          >
+            <motion.div variants={item} className="bg-space-light/30 backdrop-blur-sm p-6 rounded-lg border border-cosmic-blue/20">
+              <div className="flex justify-between items-start mb-4">
+                <h4 className="text-xl font-medium">Board Infinity</h4>
+                <span className="text-cosmic-purple px-3 py-1 rounded-full bg-cosmic-purple/10 text-sm">Jun-Jul 2024</span>
+              </div>
+              <p className="text-gray-300 mb-4">R Programming</p>
+              <ul className="list-disc list-inside space-y-2 text-gray-300">
+                <li>Learned and applied data preprocessing using libraries such as NumPy, NLTK, and Scikit-learn</li>
+                <li>Created visualizations using ggplot2 to communicate insights effectively</li>
+                <li>Generated comprehensive reports summarizing findings for stakeholders</li>
+              </ul>
+            </motion.div>
+          </motion.div>
+        </div>
+
+        {/* Education */}
+        <div>
           <motion.h3
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -75,38 +107,6 @@ const ExperienceSection = () => {
               </div>
               <p className="text-gray-300">Matriculation</p>
               <p className="text-cosmic-blue mt-2">Percentage: 92%</p>
-            </motion.div>
-          </motion.div>
-        </div>
-
-        {/* Training */}
-        <div>
-          <motion.h3
-            initial={{ opacity: 0, y: 10 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="text-2xl font-medium text-cosmic-blue mb-8 flex items-center"
-          >
-            <BookOpen className="mr-2" /> Training
-          </motion.h3>
-
-          <motion.div
-            variants={container}
-            initial="hidden"
-            whileInView="show"
-            viewport={{ once: true, amount: 0.2 }}
-          >
-            <motion.div variants={item} className="bg-space-light/30 backdrop-blur-sm p-6 rounded-lg border border-cosmic-blue/20">
-              <div className="flex justify-between items-start mb-4">
-                <h4 className="text-xl font-medium">Board Infinity</h4>
-                <span className="text-cosmic-purple px-3 py-1 rounded-full bg-cosmic-purple/10 text-sm">Jun-Jul 2024</span>
-              </div>
-              <p className="text-gray-300 mb-4">R Programming</p>
-              <ul className="list-disc list-inside space-y-2 text-gray-300">
-                <li>Learned and applied data preprocessing using libraries such as NumPy, NLTK, and Scikit-learn</li>
-                <li>Created visualizations using ggplot2 to communicate insights effectively</li>
-                <li>Generated comprehensive reports summarizing findings for stakeholders</li>
-              </ul>
             </motion.div>
           </motion.div>
         </div>
